@@ -100,3 +100,10 @@ deploy:
       github: git@github.com:RenAmamiya/renamamiya.github.io.git
       coding: git@git.coding.net:RenAmamiya/renamamiya.github.io.git
   branch: master
+
+sitemap: 
+  path: sitemap.xml
+baidusitemap: 
+  path: baidusitemap.xml
+
+
