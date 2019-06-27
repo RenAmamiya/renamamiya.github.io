@@ -1,0 +1,68 @@
+---
+title: HP Zhan 66 Pro G1 macOS 10.14.5/10.15
+categories: Hackintosh
+archives: 2019
+tags:
+- macOS
+- HP
+- 黑苹果
+---
+
+## HP Zhan 66 Pro G1 安装 macOS 10.14.5/10.15
+>
+  本人新购买了一台惠普战66笔记本，经网友推荐黑苹果系统，折腾了很长时间，翻阅了大量帖 
+子，参考同配置机型的efi，达到99%完美，感谢远景大佬还有QQ群友的帮助，由于人员众多，  恕不一一列名致谢！谢谢你们！！
+![gitPic](https://raw.githubusercontent.com/RenAmamiya/GitPic/master/Zhan 66 Pro G1/About.png)
+
+## 配置如下
+| 型号 | HP Zhan 66 Pro G1 | 
+| ------ | ------ | ------ |
+| 处理器 | 英特尔 Core i5-8250U @ 1.60GHz 四核 | 
+| 主板 | 惠普 83FD ( 英特尔 Xeon E3 - 1200 v6/7th Gen Intel Core) | 
+| 显卡 | 英特尔 UHD Graphics 620 ( 128 MB / 惠普 )（独立显卡MX150无解） |
+| 内存 | 镁光 8GB 2666Mhz DDR4 |
+| 主硬盘 | SAMSUNG MZVPW256HEGL-00000 |
+| 声卡 | Conexant ISST Audio CX8200 |
+| 无线网卡 | 博通BCM94352z(DW1560) |
+## 完善驱动程序
+声卡 ：型号为cx8200，使用Hackintool自动化打补丁并加入最新版本驱动AppleALC顺利加载扬声器、耳机和HDMI音频，id为21
+
+![gitPic](https://raw.githubusercontent.com/RenAmamiya/GitPic/master/Zhan 66 Pro G1/Audio.png)
+
+显卡：显卡：Intel UHD Graphics 620 lilu+whatevergreen自动侦测 使用fb-patcher自动化打补丁成功仿冒显卡为Intel HD Graphics 620，platform-id为0x59160000 
+
+![gitPic](https://raw.githubusercontent.com/RenAmamiya/GitPic/master/Zhan 66 Pro G1/Graphics.png)
+
+电源：感谢远景大佬的帮助修改了DSDT错误，电量成功显示，加载了AppleLPC原生电源驱动
+
+![gitPic](https://raw.githubusercontent.com/RenAmamiya/GitPic/master/Zhan 66 Pro G1/Power.png)
+
+变频：正常，已睿频
+
+亮度：通过SSDT-PNLF和AppleBacklightFixup.kext实现亮度调节，快捷键亮度调节显示小太阳，感谢群友提供亮度补丁，成功亮度保存还有16档正常亮度
+
+![gitPic](https://raw.githubusercontent.com/RenAmamiya/GitPic/master/Zhan 66 Pro G1/brightness.png)
+
+网卡：本机之前使用的是intel AC8265 无解，已更换BCM94352z，Wi-Fi蓝牙正常工作，AirDrop正常，Handoff不稳定 BrcmFirmwareData.kext和BrcmPatchRAM2.kext复制到/Library/Extensions目录下
+
+![gitPic](https://raw.githubusercontent.com/RenAmamiya/GitPic/master/Zhan 66 Pro G1/Bluetooth.png)
+
+触控板：使用VoodooI2C.kext和VoodooI2CHID.kext加载触控板驱动实现基本手势和三指拖移。
+
+![gitPic](https://raw.githubusercontent.com/RenAmamiya/GitPic/master/Zhan 66 Pro G1/touchpad.png)
+
+##其他问题
+1、本机之前使用的是intel 600P系列固态硬盘，日常使用会出现kernel panic系统卡顿，CPU占用率高，强制重启出现五国和NVME错误，后来打上SSDT-NVme 还有HackrNVMeFamily.kext之后没过一段时间又出现此问题，最后换了SM961。
+
+![gitPic](https://raw.githubusercontent.com/RenAmamiya/GitPic/master/Zhan 66 Pro G1/NVMExpress.png)
+
+3、使用Hackintool将USB和USBType-C和蓝牙内建，休眠唤醒不会出现蓝牙不可用问题
+
+![gitPic](https://raw.githubusercontent.com/RenAmamiya/GitPic/master/Zhan 66 Pro G1/USB.png)
+
+4、黑苹果休眠的时候会键盘下面滋滋响的声音，使用@aa1078614733提供的HP_lid.aml解决此问题。
+
+##最后
+有建议或者反馈请在下方留言，谢谢！
+EFI更新源
+https://github.com/RenAmamiya/HP-Zhan-66-Pro-G1
