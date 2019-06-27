@@ -1,7 +1,9 @@
 ---
 title: HP Zhan 66 Pro G1 macOS 10.14.5/10.15
-categories: Hackintosh
-archives: 2019
+categories: 
+- Hackintosh
+archives: 
+- 2019
 tags:
 - macOS
 - HP
@@ -11,7 +13,7 @@ tags:
 ## HP Zhan 66 Pro G1 安装 macOS 10.14.5/10.15
 >
   本人新购买了一台惠普战66笔记本，经网友推荐黑苹果系统，折腾了很长时间，翻阅了大量帖 
-子，参考同配置机型的efi，达到99%完美，感谢远景大佬还有QQ群友的帮助，由于人员众多，  恕不一一列名致谢！谢谢你们！！
+子，参考同配置机型的EFI，达到99%完美，感谢远景大佬还有QQ群友的帮助，由于人员众多，  恕不一一列名致谢！谢谢你们！！
 ![gitPic](https://raw.githubusercontent.com/RenAmamiya/GitPic/master/Zhan 66 Pro G1/About.png)
 
 ## 配置如下
