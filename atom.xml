@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>RenAmamiya&#39;s Blog</title>
+  
+  <subtitle>胆大心细</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://renamamiya.github.io/"/>
+  <updated>2019-10-07T03:31:35.042Z</updated>
+  <id>https://renamamiya.github.io/</id>
+  
+  <author>
+    <name>RenAmamiya</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HP Zhan 66 Pro G1 macOS 10.14.5/10.15</title>
+    <link href="https://renamamiya.github.io/2019/10/07/HP%20Zhan%2066%20Pro%20G1/"/>
+    <id>https://renamamiya.github.io/2019/10/07/HP Zhan 66 Pro G1/</id>
+    <published>2019-10-07T03:31:35.042Z</published>
+    <updated>2019-10-07T03:31:35.042Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;HP-Zhan-66-Pro-G1-安装-macOS-10-14-5-10-15&quot;&gt;&lt;a href=&quot;#HP-Zhan-66-Pro-G1-安装-macOS-10-14-5-10-15&quot; class=&quot;headerlink&quot; title=&quot;HP Zhan 66 P
+      
+    
+    </summary>
+    
+      <category term="Hackintosh" scheme="https://renamamiya.github.io/categories/Hackintosh/"/>
+    
+    
+      <category term="macOS" scheme="https://renamamiya.github.io/tags/macOS/"/>
+    
+      <category term="HP" scheme="https://renamamiya.github.io/tags/HP/"/>
+    
+      <category term="黑苹果" scheme="https://renamamiya.github.io/tags/%E9%BB%91%E8%8B%B9%E6%9E%9C/"/>
+    
+  </entry>
+  
+</feed>
