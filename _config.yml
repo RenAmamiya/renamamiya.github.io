@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: RenAmamiya's Blog
+title: TzeKitKwok's Blog
 subtitle: 胆大心细
 description:
 keywords:
-author: RenAmamiya
+author: TzeKitKwok
 language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://renamamiya.github.io
+url: https://tzekitkwok.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -97,8 +97,8 @@ feed:
 deploy:
   type: git
   repository:
-      github: git@github.com:RenAmamiya/renamamiya.github.io.git
-      coding: git@git.coding.net:RenAmamiya/renamamiya.github.io.git
+      github: git@github.com:TzeKitKwok/tzekitkwok.github.io.git
+      coding: 
   branch: master
 
 sitemap: 
